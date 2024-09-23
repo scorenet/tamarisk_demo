@@ -1,0 +1,56 @@
+.plus_card {
+  width: 100%;  /* 기본 뷰포트 너비의 35% */
+  height: 22vh; /* 기본 뷰포트 높이의 22% */
+  max-height: 220px;
+  padding: 16px;
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 1020px) { /* lg 화면 크기 이하일 때 */
+  .plus_card {
+    width: 100%; /* 너비를 100%로 변경 */
+  }
+}
+
+.plus_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.plus_category {
+  font-size: 0.875rem;
+  color: #6b7280; /* Tailwind's text-gray-500 */
+}
+
+.plus_menuIcon {
+  font-size: 1.25rem;
+  color: #9ca3af; /* Tailwind's text-gray-400 */
+  cursor: pointer;
+}
+
+.plus_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.plus_reduction {
+  color: white;
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.plus_reduction_value {
+  font-weight: bold;
+}
